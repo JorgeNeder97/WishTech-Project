@@ -1,0 +1,129 @@
+/* Paleta de colores
+Negro: #222831;
+Gris: #393E46;
+Verde Agua: #00ADB5;
+Blanco: #EEEEEE;
+*/
+
+/* All */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+
+body {
+  background: #EEEEEE;
+  font-family:'Share Tech', sans-serif;
+}
+
+/* Header */
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.ventana-busqueda {
+  display:none;
+}
+
+.header-desktop {
+  display: none;
+}
+
+.aside-filtros {
+  display:none;
+}
+
+.logo-buscador-usuario-carrito {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 5px;
+  background: radial-gradient(circle, #393E46, #222831);
+}
+
+#logo-header {
+  width: 30%;
+}
+
+.menu-icono {
+  border: 1px #00adb5 solid;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* CARRUSEL */
+
+.carrusel-container {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo-carrusel {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+
+.carrusel {
+  width: 100%;
+  height: auto;
+  margin: 0px auto 10px;
+  overflow: hidden;
+}
+
+.carrusel ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 20s infinite alternate;
+}
+
+.carrusel li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.carrusel img {
+  width: 100%;
+}
+
+.producto-precio {
+  position: absolute;
+  text-align: right;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  bottom: 50px;
+  right: 30px;
+  font-size: 25px;
+}
+
+@keyframes slide {
+  0% { margin-left: 0; }
+  30% { margin-left: 0; }
+
+  35% { margin-left: -100%; }
+  65% { margin-left: -100%; }
+
+  70% { margin-left: -200%; }
+  100% { margin-left: -200%; }
+}
+
+
+
+
+
+
+
+
+  
